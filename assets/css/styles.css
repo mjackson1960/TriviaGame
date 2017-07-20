@@ -1,0 +1,146 @@
+body{
+	background-color: black;
+}
+.wrapper{
+
+	background-color: #DCDCDC;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding: 15px;
+	padding-top: 5px;
+	text-align: center;
+	opacity: 0.5;
+
+}
+
+#status{
+
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	height: auto;
+	padding: 15px;
+	text-align: center;
+	border-bottom: solid black thin;
+	background-color: white;
+}
+
+h1{
+	text-align: center;
+	color: red;
+}
+h3{
+	margin-top: -20px;
+
+}
+
+.r_buttonstyles{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer{
+	max-width: 600px;
+	padding: 15px;
+	font-size: 12px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+
+h4{
+		border-top: solid black thin;
+		padding-top: 10px;
+		color:red;
+		text-align: center;
+
+}
+
+#intropage{
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: red;*/
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+a{
+	width: 200px;
+	list-style: none;
+	text-decoration: none;
+	color: red;
+	margin-top: -15px;
+
+}
+
+#gotobutton{
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+.firesafetyheadline{
+	margin-top: -10px;
+	max-width: 570px;
+	font-size: 40px;
+	font-style: bold;
+	color: white;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	background-color: black;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+p{
+	font-size: 12px;
+	color:white;
+
+}
+
+.footer{
+	padding: 10px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	max-width: 580px;
+	clear: both;
+}
+
+a:hover{
+	color: green;
+}
+
+#correctanswer{
+	text-align: center;
+	margin-top: -20px;
+}
+
+#incorrectanswer{
+	text-align: center;
+	margin-top: -25px;
+}
+
+.btnfalse{
+	float: right;
+	
+}
+
+.btntrue{
+	float: left;
+
+}
+
+h2{
+	color: white;
+	text-align: center;
+
+}

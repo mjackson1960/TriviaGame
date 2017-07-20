@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TriviaGame_Quiz</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/javascript/game.js">
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+function countDown(secs,elem){
+
+	var element = document. getElementById(elem);
+	element .innerHTML = "GET OUT OF THE HOUSE<br>you have "+secs+" seconds"
+
+
+	if (secs < 1) {
+		clearTimeout(timer);
+		element .innerHTML = '<h1>YOU LOSE!</h1><h3>You Die</h3>';
+	
+
+
+	}
+
+	secs--;
+	var timer = setTimeout('countDown ('+secs+',"'+elem+'")', 1000);
+
+}
+	
+</script>
+
+<div id="status"></div>
+<script type="text/javascript">countDown(60,"status");</script>
+
+
+
+<div class="wrapper">
+
+	<form>
+
+	<h4>1. The flames of a fire are responsible for most of the casualties in a fire?
+		<button class="btnfalse" type="button" onclick="myFunction()">FALSE</button>
+		<button class="btntrue" type="button" onclick="myFunction2()">TRUE</button></h4> 
+
+	<h4>2. Anyone sleeping will smell the smoke and wake up to exit the home?
+		<button class="btnfalse" type="button" onclick="myFunction()">FALSE</button>
+		<button class="btntrue" type="button" onclick="myFunction2()">TRUE</button></h4>
+	
+
+	<h4>3. Once fitted, you can leave your fire alarm and smoke detectors be?
+		<button class="btnfalse" type="button" onclick="myFunction()">FALSE</button>
+		<button class="btntrue" type="button" onclick="myFunction2()">TRUE</button></h4>
+
+
+	<h4>4. Fire extinguishers only last for 10 years?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+	
+
+	<h4>5. Gunpowder was used in the first fire extinguisher?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+	
+
+	<h4>6. Approximately 18,300 people are injured every year in fires?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+	
+	<h4>7. Most house fires start in the kitchen?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+	
+
+	<h4>8. smoking is the primary cause of death by fire in the U.S.?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+
+
+	<h4>9. Arson is the second most common cause of home fires.?
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+
+
+	<h4>10. Dying in a fire is cut in half if you have a working smoke alarm.
+		<button class="btntrue" type="button" onclick="myFunction()">TRUE</button>
+		<button class="btnfalse" type="button" onclick="myFunction2()">FALSE</button></h4>
+
+		<button onclick="clearInterval(element)">Stop time</button>
+
+	
+	</form>
+
+</div>
+
+<h2>Correct</h2>
+
+<h4 id="correctanswer">0</h4>
+
+<h2 style="margin-top: -20px">Incorrect</h2>
+
+<h4 id="incorrectanswer">0</h4>
+
+<!-- <div class="footer">&copy;2017 Mike Jackson<div> -->
+
+<script>
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myFunction(){
+    document.getElementById("correctanswer").innerHTML = add();
+}
+
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myFunction2(){
+    document.getElementById("incorrectanswer").innerHTML = add();
+
+    var element = setInterval(myTimer ,0);
+}
+</script>
+		
+
+
+</body>
+</html>
